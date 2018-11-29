@@ -1,10 +1,9 @@
 function deriv = pder(f, n, varargin); 
-  #calculates symmetric partial derivative (differential quotient) by h = 10^-8
-  #takes (f, n, point)
+  #calculates symmetric partial derivative, differential quotient by h = 10^-8
+  #takes (f, n, args)
   #f - pointer to the to be diff. function
   #n - position of the argument in the args array to be diff. by
-  #point - the arguments array to pass to f, defining the point where pder is to be calculated
-  
+  #args - the arguments array to pass to f, defining the point where pder is to be calculated
   h = 10^(-8);
   l = nargin();
   argsplus = varargin;
@@ -13,7 +12,6 @@ function deriv = pder(f, n, varargin);
   argsminus{n} = argsminus{n} .- h/2;
   deriv = (f(argsplus{1:(l-2)}) .- f(argsminus{1:(l-2)}))./h;
 endfunction
-
 
 function unsich = gausserr(f, varargin)  
   # varargin = params, dparams
@@ -28,4 +26,27 @@ function unsich = gausserr(f, varargin)
     summa = summa .+ (pder(f, n, varargin{1:l}).*varargin{l+n}).**2;
   endfor
   unsich = sqrt(summa);
+endfunction
+
+function  [xbar, dx] = getstat(x)
+  #mittelwert und standardabweichung/sqrt(n)
+  l = length(x);
+  xbar = sum(x)/l;
+  summa = 0;
+  for i = 1:l
+    summa += (xbar - x(i))**2;
+  endfor
+  dx = sqrt(1/l/(l-1)*summa);
+endfunction
+
+function [xbar, dxbar] = getwavg(x, dx)
+  #gewichteter mittelwert, mit unsich
+  l = length(x);
+  weights = (dx(1)^2)./(dx.^2);
+  xbar = sum(weights.*x)/sum(weights);
+  suma = 0;
+  for i = 1:l
+    suma += (dx(i)*weights(i))^2;
+  endfor
+  dxbar = sqrt(suma)/sum(weights);
 endfunction
