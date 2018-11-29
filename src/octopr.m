@@ -50,3 +50,13 @@ function [xbar, dxbar] = getwavg(x, dx)
   endfor
   dxbar = sqrt(suma)/sum(weights);
 endfunction
+
+function [chi2, dof, c2d] = chi2dof(fitval, mesval, dy, nparam)
+  #berechne chi^2, dof, und chi^2/dof werte.
+  # input: fitval- Werte aus dem fit,
+  # input: mesval- Gemessene werte,
+  # input: dy- Unsicherheiten für Messwerte
+  chi2 = sum((fitval.-mesval).**2/dy.**2);
+  dof = length(mesval).-nparam;
+  c2d = chi2./dof;
+endfunction
