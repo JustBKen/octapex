@@ -14,12 +14,14 @@ function deriv = pder(f, n, varargin);
   deriv = (f(argsplus{1:(l-2)}) .- f(argsminus{1:(l-2)}))./h;
 endfunction
 
+
 function unsich = gausserr(f, varargin)  
-# varargin = params, dparams
-#calculate uncertainty of f(params) by the Gauss rule, provided the argument uncertainties dparams (as comma-sep. sets, not vectors/lists)
-#returns single unsich values, or a set of points, if input is set of points
-#f to be passed as @f (handle);
-#f must be called as f(params), params as a set (not vector/list - just comma separated values)
+  # varargin = params, dparams
+  #calculate uncertainty of f(params) by the Gauss rule, provided the argument uncertainties dparams (as comma-sep. sets, not vectors/lists)
+  #returns single unsich values, or a set of points, if input is set of points
+  #f to be passed as @f (handle);
+  #f must be called as f(params), params as a set (not vector/list - just comma separated values)
+
   l = (nargin()-1)/2;
   summa = 0;
   for n = 1:l
