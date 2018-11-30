@@ -51,7 +51,7 @@ function [xbar, dxbar] = getwavg(x, dx)
   dxbar = sqrt(suma)/sum(weights);
 endfunction
 
-function [chi2, dof, c2d] = chi2dof(fitval, mesval, dy, nparam)
+function [chi2, dof, c2d] = chi2dof(fitval, mesval, dmesval, nparam)
   #berechne chi^2, dof, und chi^2/dof werte.
   # input: fitval - Werte aus dem fit,
   # input: mesval - Gemessene werte,
