@@ -60,3 +60,9 @@ function [chi2, dof, c2d] = chi2dof(fitval, mesval, dmesval, nparam)
   dof = length(mesval).-nparam;
   c2d = chi2./dof;
 endfunction
+
+function rss = RSS(y, fx)
+  # Residual sum of squares
+  # usage: RSS(observations, fitted value)
+  rss = sum((y - fx).^2);
+endfunction
