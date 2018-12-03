@@ -51,18 +51,22 @@ function [xbar, dxbar] = getwavg(x, dx)
   dxbar = sqrt(suma)/sum(weights);
 endfunction
 
-function [chi2, dof, c2d] = chi2dof(fitval, mesval, dmesval, nparam)
-  #berechne chi^2, dof, und chi^2/dof werte.
-  # input: fitval - Werte aus dem fit,
-  # input: mesval - Gemessene werte,
-  # input: dmesval - Unsicherheiten für Messwerte
-  chi2 = sum((fitval.-mesval).**2./dmesval.**2);
-  dof = length(mesval).-nparam;
-  c2d = chi2./dof;
-endfunction
-
 function rss = RSS(y, fx)
   # Residual sum of squares
   # usage: RSS(observations, fitted value)
   rss = sum((y - fx).^2);
+endfunction
+
+function [chi2, dof, chi2dof] = chi2dof(fx, y, dy, np)
+  #berechne chi^2, dof, und chi^2/dof werte.
+  # input: fx - predicted values,
+  # input: y  - observed values,
+  # input: dy - uncertainty in observed values
+  # input: np - number of parameters f takes besides x
+  chi2 = 0;
+  for i = 1:length(fx)
+    chi2 += (fx(i)-y(i)).^2./dy(i).^2;   
+  endfor
+  dof = length(y).-np;
+  chi2dof = chi2./dof;
 endfunction
