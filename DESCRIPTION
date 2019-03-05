@@ -5,4 +5,5 @@ Author: Anton Douginets (anton.douginets@physik.hu-berlin.de), Birge Sükrü Tok
 Maintainer: Anton Douginets (anton.douginets@physik.hu-berlin.de)
 Title: octopr
 Description: an Octave package for assisting data analysis in physics (mainly lab praktika).
+Categories: physics, statistics
 License: Apache-2.0
