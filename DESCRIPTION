@@ -1,0 +1,8 @@
+Name: octopr
+Version: 0.1
+Date: 2019-05-03
+Author: Anton Douginets (anton.douginets@physik.hu-berlin.de), Birge Sükrü Tok (birge.suekrue.tok@physik.hu-berlin.de)
+Maintainer: Anton Douginets (anton.douginets@physik.hu-berlin.de)
+Title: octopr
+Description: an Octave package for assisting data analysis in physics (mainly lab praktika).
+License: Apache-2.0
