@@ -6,5 +6,5 @@ A GNU/Octave package for assissting calculations in physics praktika. Mostly wor
 2) Damping coefficient for nonlinear least squares (LMA?)
 3) Korrelationsmatrix aus Daten berechnen - für NLSQ?
 
-4) documentation
+4) documentation,
 extend as neccessary
