@@ -1,4 +1,4 @@
-function [p, Vp, n, dS, S] = NLSQ(f, x, y, Vy, p0, stol = 0.0001, N = 50)
+function [p, Vp, S, n, dS] = nlsq(f, x, y, Vy, p0, stol = 0.001, N = 50)
   # Assumption: f = f(x, p)
   W = inv(Vy);  # Gewichtsmatrix
   # 1st iteration
