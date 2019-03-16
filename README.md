@@ -11,3 +11,4 @@ A GNU/Octave package for assissting calculations in physics praktika. Mostly wor
 - Korrelationsmatrix aus Daten berechnen - für NLSQ? 
 - documentation
 - format this repo's wiki, readme etc.
+- rewrite getwavg() to account for correlation of input data
