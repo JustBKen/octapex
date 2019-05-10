@@ -7,7 +7,7 @@ A GNU/Octave package for assissting calculations in physics praktika. Mostly wor
 2) make a test dataset
 3) chi2 test implementation? hypothesis verification
 4) Damping coefficient for nonlinear least squares (LMA?)
-5a) Fehlerrechnung im Rahmen des linearen Modells - siehe P. Schäfer 
-5b) Korrelationsmatrix aus Daten berechnen - für NLSQ? 
+5) Fehlerrechnung im Rahmen des linearen Modells - siehe P. Schäfer
+6) Korrelationsmatrix aus Daten berechnen - für NLSQ? 
 7) documentation
 8) format this page
