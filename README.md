@@ -13,11 +13,17 @@ Since Octave, being a specialized scripting language, is fairly easy to learn an
   - concrete list of desired functionality
 - make a test dataset
 - implement shit:
-  - (placeholder)
+  - v0.4:
+    - cull/reogrganize existing code
+    - define minimal required functionality
+  - later:
+    - todo
 - documentation:
-  - accompanying manual
-  - a wiki page here
-  - evtl. eine kleine Einführung in Octave für Studis
+  - v0.4: document the code remaining after the above + start wiki
+  - later:
+    - accompanying manual
+    - a full wiki page here, doubling the manual
+    - evtl. eine kleine Einführung in Octave für Studis
 
 =================================================================================
 #### **Old todo (obviously outdated):**
