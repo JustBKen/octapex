@@ -1,0 +1,76 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{soul}
+\usepackage{mathtools}
+\usepackage{amssymb,amsmath,amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{gensymb}
+\usepackage{units}
+\usepackage{hhline}
+\usepackage{color}
+\usepackage[export]{adjustbox}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{titling}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage[ref]{cite}
+\usepackage[font=small,labelfont=bf]{caption}
+
+
+
+\geometry{a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm}
+\definecolor{pantone294}{cmyk}{1,0.6,0,0.2}
+\hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black }
+
+\title{Octapex package manual}
+\author{Anton Douginets}
+\date{\today}
+\pagestyle{plain}
+\rhead{}
+\lfoot{Humboldt-Universität zu Berlin}
+\rfoot{octapex}
+
+
+\begin{document}
+	%\newgeometry{left=14mm, right=13.5mm, top=13.5mm, bottom=30mm}
+	\begin{titlepage}
+		\thispagestyle{empty}
+		\begin{figure}
+			\includegraphics[width=31.5mm,right]{/home/anton/my/work/latex/img/husiegel.png}
+		\end{figure}
+		\vspace*{-30mm}\hspace{-6mm}\textbf{\textcolor{pantone294}{\large{Mathematisch-Naturwissenschaftliche Fakultät}}}\\
+		\textcolor{pantone294}{Institut für Physik}\\
+		\vspace{20mm}
+		\begin{center}
+			%\textcolor{pantone294}{\huge{Grundpraktikum II}}\\\vspace*{7mm}
+			\textcolor{pantone294}{\huge{\textbf{\thetitle}}}\\\vspace*{10mm}
+			\textcolor{pantone294}{\thedate}\\\vspace*{10mm}
+		\end{center}
+		\tableofcontents
+
+		\vspace{1cm}
+ % summary section
+		Sample Text
+	\end{titlepage}
+	\makeatother
+	\newpage
+
+	\section{Introduction to Octave for data processing}
+
+	\section{Package documentation}
+
+	\begin{thebibliography}{}
+	\bibitem{PraktikumsScript}Dr. Uwe Müller: \textit{Physikalisches Grundpraktikum: Einführung in die Messung, Auswertung und Darstellung experimenteller Ergebnisse in der Physik}, 2007
+	\bibitem{Schaefer} Dr. P. Schäfer: \textit{Rechnet QtiPlot falsch?, oder Einige Anmerkungen zur Methode der linearen Regression}, 2017
+
+%  \bibitem{PraktikumsScriptElektro}Dr. Uwe Müller: \textit{Physikalisches Grundpraktikum: Elektrodynamik und Optik}, 2010
+%  \bibitem{datenanalyse} Prof. Dr. Volker Blobel, Prof. Dr. Erich Lohrmann: \textit{Statistische und numerische Methoden der Datenanalyse}, 1998
+%  \bibitem{modern} Prof. Dr. Martin Erdmann, Prof. Dr. Thomas Hebbeker: \textit{Moderne Methoden der Datenanalyse}, 2013
+
+	\end{thebibliography}
+\end{document}
