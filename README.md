@@ -15,7 +15,7 @@ Since Octave, being a specialized scripting language, is fairly easy to learn an
 - implement shit:
   - v0.4:
     - cull/reogrganize existing code
-    - define minimal required functionality
+    - define and implement minimal required functionality
   - later:
     - todo
 - documentation:
