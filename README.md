@@ -1,4 +1,5 @@
 # octapex
+06.10.2019 - archived due to missing purpose/reprioritization.
 ## Octave for Physics Experiments
 A GNU/Octave package aiming to:
 - provide a toolkit for calculations necessary in university physics lab work - built primarily according to the needs of HU Berlin's Grundpraktikum
