@@ -12,7 +12,7 @@
 % See the License for the specific language governing permissions and
 % limitations under the License.
 
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt]{article}
 \usepackage{ngerman}
 \usepackage{soul}
 \usepackage{mathtools}
@@ -22,59 +22,41 @@
 \usepackage{geometry}
 \usepackage{float}
 \usepackage[autostyle=true,german=quotes]{csquotes}
-\usepackage{hyperref}
-\usepackage{fancyhdr}
 \usepackage{gensymb}
 \usepackage{units}
-\usepackage{hhline}
-\usepackage{color}
-\usepackage[export]{adjustbox}
+\usepackage{fancyhdr}
 \usepackage[nottoc,numbib]{tocbibind}
-\usepackage{titling}
-\usepackage{enumitem}
+\usepackage{cite}
+\usepackage{abstract}
 \usepackage{wrapfig}
-\usepackage[ref]{cite}
 \usepackage[font=small,labelfont=bf]{caption}
+\graphicspath{ {figures/} }
+\geometry{a4paper, left=25mm, right=25mm, top=20mm, bottom=20mm}
 
-
-
-\geometry{a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm}
-\definecolor{pantone294}{cmyk}{1,0.6,0,0.2}
-\hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black }
+\pagestyle{plain}
+%\pagestyle{fancy}
+%\lhead{octapex}
+%\rhead{Paketbeschreibung}
+%\lfoot{left footer}
+%\rfoot{right footer}
 
 \title{Octave für das Grundpraktikum}
 \author{Anton Douginets}
 \date{\today}
-\pagestyle{plain}
-\rhead{}
-\lfoot{Humboldt-Universität zu Berlin}
-\rfoot{octapex}
+
 
 
 \begin{document}
-	%\newgeometry{left=14mm, right=13.5mm, top=13.5mm, bottom=30mm}
-	\begin{titlepage}
-		\thispagestyle{empty}
-		\begin{figure}
-			\includegraphics[width=31.5mm,right]{/home/anton/my/work/latex/img/husiegel.png}
-		\end{figure}
-		\vspace*{-30mm}\hspace{-6mm}\textbf{\textcolor{pantone294}{\large{Mathematisch-Naturwissenschaftliche Fakultät}}}\\
-		\textcolor{pantone294}{Institut für Physik}\\
-		\vspace{20mm}
-		\begin{center}
-			%\textcolor{pantone294}{\huge{Grundpraktikum II}}\\\vspace*{7mm}
-			\textcolor{pantone294}{\huge{\textbf{\thetitle}}}\\\vspace*{10mm}
-			\textcolor{pantone294}{\thedate}\\\vspace*{10mm}
-		\end{center}
-		\tableofcontents
+\maketitle
+\thispagestyle{empty}
 
-		\vspace{1cm}
- % summary
+\begin{abstract}
+Zusammenfassung
+\end{abstract}
 
-		Ein Abschnitt zum Zusammenfassen
-	\end{titlepage}
-	\makeatother
-	\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
 
 	\section{Eine kleine Einführung in GNU/Octave}
 

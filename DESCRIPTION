@@ -1,13 +1,13 @@
 Name: octapex
 Version: 0.4
-Date: 2019-
+Date: 2020-
 Author: Anton Douginets (anton.douginets@physik.hu-berlin.de), Birge Sükrü Tok (birge.suekrue.tok@physik.hu-berlin.de)
 Maintainer: Anton Douginets (anton.douginets@physik.hu-berlin.de)
-Title: octapex - Octave for physis experiments
+Title: octapex - Octave for physics experiments
 Url: https://github.com/adouge/octapex
 Description: A WIP package aiming to:
- - provide a toolkit for calculations necessary in university physics lab work - built primarily according to the needs of HU Berlin's Grundpraktikum
+ - provide a little toolkit for calculations necessary in undergraduate physics lab work - built primarily according to the needs of HU Berlin's Grundpraktikum;
  - provide means for quick preliminary analysis of experimental data, with the results exportable for further processing with more sophisticated tools.
 License: Apache-2.0
 Categories: data analysis, physics
-Depends: optim
+Depends:
